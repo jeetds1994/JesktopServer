@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-
 FetchController.get_API_data("art")
 FetchController.get_API_data("animals")
 FetchController.get_API_data("entertainment-board-games")

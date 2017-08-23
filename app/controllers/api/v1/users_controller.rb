@@ -6,18 +6,16 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def me
-    render json: current_user
+    render json: [current_user, current_user.scores]
   end
 
   def create
-   @user = User.new(username: params[:user][:username], password:params[:user][:password])
-   byebug
+   @user = User.new(username: params[:username], password:params[:password])
    if @user.save
      render json: @user
    else
      render json: { message: "User not created"}
    end
-
   end
 
   def user_params

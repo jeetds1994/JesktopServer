@@ -2,8 +2,8 @@ class ApplicationController < ActionController::API
   include ActionController::HttpAuthentication::Token::ControllerMethods
   before_action :authorized
 
-  def issue_token
-    JWT.encode(payLoad, "learnlovecode")
+  def issue_token(payload)
+    JWT.encode(payload, "learnlovecode")
   end
 
   def decoded_token(token)
