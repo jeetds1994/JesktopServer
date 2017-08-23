@@ -3,4 +3,15 @@ Rails.application.routes.draw do
 
   post "/", to: "questions#index"
   get "/categories/:category", to: "questions#category"
+
+
+  namespace :api do
+    namespace :v1 do
+      resouces :users
+
+      post '/login', to: 'sessions#create'
+      post '/signup', to: 'users#create'
+      get '/me', to: 'users#me'
+    end
+  end
 end
