@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+JesktopServer is built to work alongside Jesktop.
 
-Things you may want to cover:
+Jesktop: https://github.com/jeetds1994/Jesktop
 
-* Ruby version
+Setup:
 
-* System dependencies
+Step 1: rails db:create
 
-* Configuration
+Step 2: rails db:migrate
 
-* Database creation
+Step 3: rails db:seed
 
-* Database initialization
+Step 4: rails s
 
-* How to run the test suite
+Purpose:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To allow Jesktop to get questions from local server.
