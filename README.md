@@ -4,7 +4,11 @@ JesktopServer is built to work alongside Jesktop.
 
 Jesktop: https://github.com/jeetds1994/Jesktop
 
-Setup:
+#Youtube
+
+https://youtu.be/l-_oEnY-cpM
+
+#Setup:
 
 Step 1: rails db:create
 
